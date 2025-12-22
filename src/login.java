@@ -39,10 +39,10 @@ public class login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextField1 = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
@@ -55,6 +55,26 @@ public class login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 51, 51));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.setBackground(new java.awt.Color(255, 227, 238));
+        jTextField1.setFont(new java.awt.Font("Open Sans", 0, 14)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(153, 153, 153));
+        jTextField1.setText("Masukan Username");
+        jTextField1.setBorder(null);
+        jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField1FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jTextField1FocusLost(evt);
+            }
+        });
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 323, 316, 61));
 
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,27 +100,6 @@ public class login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 520, 316, 61));
-
-        jTextField1.setBackground(new java.awt.Color(255, 227, 238));
-        jTextField1.setFont(new java.awt.Font("Open Sans", 0, 14)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(153, 153, 153));
-        jTextField1.setText("Masukan Username");
-        jTextField1.setBorder(null);
-        jTextField1.setSelectionColor(new java.awt.Color(102, 102, 102));
-        jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField1FocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField1FocusLost(evt);
-            }
-        });
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 323, 316, 61));
 
         jPasswordField1.setBackground(new java.awt.Color(255, 227, 238));
         jPasswordField1.setFont(new java.awt.Font("Open Sans", 0, 14)); // NOI18N
@@ -198,27 +197,6 @@ public class login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jPasswordField1FocusGained
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusLost
-        jLabel2.setVisible(false);
-        if(jTextField1.getText().equals("'")){
-            jTextField1.setText("Masukan Username");
-            jTextField1.setForeground(new Color(81,6,21));
-        }
-    }//GEN-LAST:event_jTextField1FocusLost
-
-    private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
-        jLabel2.setVisible(false);
-        if(jTextField1.getText().equals("Masukan Username")){
-            jTextField1.setText("");
-            jTextField1.setForeground(new Color(81,6,21));
-        }
-    }//GEN-LAST:event_jTextField1FocusGained
-
     //exit button di login page pojok kanan atas!
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int a=JOptionPane.showConfirmDialog(null,"Apakah kamu mau keluar dari Aplikasi?","Konfirmasi Pilihan!",JOptionPane.YES_NO_OPTION);
@@ -235,6 +213,26 @@ public class login extends javax.swing.JFrame {
             jPasswordField1.setEchoChar('*');
         }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
+        jLabel2.setVisible(false);
+        if(jTextField1.getText().equals("Masukan Username")){
+            jTextField1.setText("");
+            jTextField1.setForeground(new Color(81,6,21));
+        }
+    }//GEN-LAST:event_jTextField1FocusGained
+
+    private void jTextField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusLost
+        jLabel2.setVisible(false);
+        if(jTextField1.getText().equals("")){
+            jTextField1.setText("Masukan Username");
+            jTextField1.setForeground(new Color(81,6,21));
+        }
+    }//GEN-LAST:event_jTextField1FocusLost
 
     /**
      * @param args the command line arguments
