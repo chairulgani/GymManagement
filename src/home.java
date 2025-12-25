@@ -64,6 +64,11 @@ public class home extends javax.swing.JFrame {
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/user-add.png"))); // NOI18N
         jMenu1.setText("Member Baru");
         jMenu1.setFont(new java.awt.Font("Open Sans", 1, 18)); // NOI18N
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu1);
 
         jMenu2.setBackground(new java.awt.Color(61, 61, 61));
@@ -131,6 +136,10 @@ public class home extends javax.swing.JFrame {
            new login().setVisible(true);
        }
     }//GEN-LAST:event_jMenu5MouseClicked
+
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
+        new NewMember().setVisible(true);
+    }//GEN-LAST:event_jMenu1MouseClicked
 
     /**
      * @param args the command line arguments

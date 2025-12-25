@@ -13,6 +13,7 @@ public class login extends javax.swing.JFrame {
         this.setResizable(false);         // Membuat ukuran fixed (tidak bisa dibesarkan)
         this.setLocationRelativeTo(null); // Membuat window muncul di tengah layar
         
+        
         styleLoginButton();        // ← Tambahkan ini
     }
     
@@ -154,6 +155,7 @@ public class login extends javax.swing.JFrame {
         jButton2.setContentAreaFilled(false);  // ← INI PENTING!
         jButton2.setOpaque(true);
         jButton2.setBorder(null);
+        
         
         // Pastikan warna background tetap
         jButton2.setBackground(new Color(238, 70, 119));

@@ -1,0 +1,281 @@
+
+public class NewMember extends javax.swing.JFrame {
+    
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewMember.class.getName());
+    public NewMember() {
+        initComponents();
+        this.setSize(1366, 768);          // Mengatur ukuran ke 1366x768
+        this.setResizable(false);         // Membuat ukuran fixed (tidak bisa dibesarkan)
+        this.setLocationRelativeTo(null); // Membuat window muncul di tengah layar
+        
+        noBorder();
+    }
+    
+    //style no border button
+    private void noBorder(){
+
+        jButton3.setFocusPainted(false);
+        jButton3.setContentAreaFilled(false);  // ← INI PENTING!
+        jButton3.setOpaque(true);
+
+        
+        jButton4.setBorderPainted(false);
+        jButton4.setFocusPainted(false);
+        jButton4.setContentAreaFilled(false);  // ← INI PENTING!
+        jButton4.setOpaque(true);
+        jButton4.setBorder(null);
+        
+        jButton5.setBorderPainted(false);
+        jButton5.setFocusPainted(false);
+        jButton5.setContentAreaFilled(false);  // ← INI PENTING!
+        jButton5.setOpaque(true);
+        jButton5.setBorder(null);
+        
+                jButton6.setBorderPainted(false);
+        jButton6.setFocusPainted(false);
+        jButton6.setContentAreaFilled(false);  // ← INI PENTING!
+        jButton6.setOpaque(true);
+        jButton6.setBorder(null);
+        
+                jButton1.setBorderPainted(false);
+        jButton1.setFocusPainted(false);
+        jButton1.setContentAreaFilled(false);  // ← INI PENTING!
+        jButton1.setOpaque(true);
+        jButton1.setBorder(null);
+    }
+    
+    
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel10 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jPanel2 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        resetButton = new javax.swing.JButton();
+        saveButton = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(21, 21, 21));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1366, 768));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Open Sans", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Member Baru");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 28, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("ID Member :");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 113, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Nama");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 151, -1, -1));
+
+        jLabel5.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Nomor Telepon");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 272, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Email");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 389, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("Gender");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 510, -1, -1));
+
+        jLabel15.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("00");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(372, 113, -1, -1));
+
+        jComboBox1.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female" }));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 548, 256, 61));
+
+        jLabel10.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Payment");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 151, -1, -1));
+
+        jTextField1.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 189, 256, 61));
+
+        jTextField2.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 310, 256, 61));
+
+        jTextField3.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(542, 189, 256, 61));
+
+        jTextField4.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 431, 256, 61));
+
+        javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
+        jLayeredPane1.setLayout(jLayeredPane1Layout);
+        jLayeredPane1Layout.setHorizontalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 468, Short.MAX_VALUE)
+        );
+        jLayeredPane1Layout.setVerticalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 73, Short.MAX_VALUE)
+        );
+
+        jPanel1.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 694, -1, -1));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setPreferredSize(new java.awt.Dimension(250, 100));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Open Sans", 1, 16)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(81, 6, 21));
+        jButton1.setText("Update & Delete");
+        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton1.setBorderPainted(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 227, 200, 49));
+
+        jButton3.setBackground(new java.awt.Color(255, 227, 238));
+        jButton3.setFont(new java.awt.Font("Open Sans", 1, 16)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(81, 6, 21));
+        jButton3.setText("Member Baru");
+        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(81, 6, 21), 3));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 154, 200, 49));
+
+        jButton4.setBackground(new java.awt.Color(255, 255, 255));
+        jButton4.setFont(new java.awt.Font("Open Sans", 1, 16)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(81, 6, 21));
+        jButton4.setText("List Member");
+        jButton4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton4.setBorderPainted(false);
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 300, 200, 49));
+
+        jButton5.setBackground(new java.awt.Color(255, 255, 255));
+        jButton5.setFont(new java.awt.Font("Open Sans", 1, 16)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(81, 6, 21));
+        jButton5.setText("Pembayaran");
+        jButton5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton5.setBorderPainted(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 373, 200, 49));
+
+        jButton6.setBackground(new java.awt.Color(255, 255, 255));
+        jButton6.setFont(new java.awt.Font("Open Sans", 1, 16)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(81, 6, 21));
+        jButton6.setText("Logout");
+        jButton6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton6.setBorderPainted(false);
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 446, 200, 49));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Frame 1.png"))); // NOI18N
+        jLabel4.setLabelFor(jPanel2);
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 773));
+
+        resetButton.setBackground(new java.awt.Color(0, 102, 102));
+        resetButton.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        resetButton.setForeground(new java.awt.Color(255, 255, 255));
+        resetButton.setText("Reset");
+        jPanel1.add(resetButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(408, 627, 128, 61));
+
+        saveButton.setBackground(new java.awt.Color(238, 70, 119));
+        saveButton.setFont(new java.awt.Font("Open Sans", 1, 14)); // NOI18N
+        saveButton.setForeground(new java.awt.Color(255, 255, 255));
+        saveButton.setText("Save");
+        jPanel1.add(saveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 627, 128, 61));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
+            logger.log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(() -> new NewMember().setVisible(true));
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JButton resetButton;
+    private javax.swing.JButton saveButton;
+    // End of variables declaration//GEN-END:variables
+}
